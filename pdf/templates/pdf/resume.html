@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<body>
+    <header>
+        <h1>{{user_profile.name}}</h1>
+        <p>Web Developer</p>
+    </header>
+    
+    <div class="section">
+        <h2>Contact Information</h2>
+        <p>Email: {{user_profile.email}}</p>
+        <p>Phone: {{user_profile.phone}}</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourname">linkedin.com/in/yourname</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+        <p>Website: <a href="https://www.yourwebsite.com">yourwebsite.com</a></p>
+    </div>
+
+    <div class="section">
+        <h2>Summary</h2>
+        <p>{{user_profile.summary}}</p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>{{user_profile.school}}</strong></p>
+        <p><strong>{{user_profile.degree}}</strong></p>
+    </div>
+
+    <div class="section">
+        <h2>Work Experience</h2>
+        <p><strong>{{user_profile.previous_work}}</strong></p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>{{user_profile.skills}}</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Languages</h2>
+        <p>English (Fluent), Spanish (Intermediate)</p>
+    </div>
+
+    <div class="section">
+        <h2>References</h2>
+        <p>Available upon request</p>
+    </div>
+</body>
+</html>
